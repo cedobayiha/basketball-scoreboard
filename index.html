@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="full-score-board">
+            <div class="score-board-sides">
+                <h1 class="score-sides-title">HOME</h1>
+                <div class="score-display" id="home-score-display-el">0</div>
+
+                <div class="btn-wrapper">
+                    <button class="score-btn" id="home-one-point-btn" onclick="addOnePointToHomeTeam()" >+ 1</button>
+                    <button class="score-btn" id="home-two-point-btn" onclick="addTwoPointToHomeTeam()">+ 2</button>
+                    <button class="score-btn" id="home-three-point-btn" onclick="addThreePointToHomeTeam()">+ 3</button>
+                </div>
+            </div>
+            <div>
+
+                <button id="restart" onclick="restart()">Restart Game</button>
+            </div>
+
+            <div class="score-board-sides">
+                <h1 class="score-sides-title">GUEST</h1>
+                <div class="score-display" id="guest-score-display-el">0</div>
+
+                <div class="btn-wrapper">
+                    <button class="score-btn" id="guest-one-point-btn" onclick="addOnePointToGuestTeam()" >+ 1</button>
+                    <button class="score-btn" id="guest-two-point-btn" onclick="addTwoPointToGuestTeam()">+ 2</button>
+                    <button class="score-btn" id="guest-three-point-btn" onclick="addThreePointToGuestTeam()">+ 3</button>
+                </div>
+            </div>
+
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+</html>
